@@ -1,9 +1,8 @@
-CREATE DATABASE berunio;
+CREATE DATABASE IF NOT EXISTS berunio;
 
 USE berunio;
 
-SHOW TABLES;
-CREATE TABLE users (
+CREATE TABLE IF NOT EXISTS users (
     user_id INT PRIMARY KEY AUTO_INCREMENT,
     username VARCHAR(255) NOT NULL,
     passwordx VARCHAR(255) NOT NULL,
@@ -14,16 +13,16 @@ CREATE TABLE users (
 
 INSERT INTO users (username, passwordx, fullname)
 VALUES
-('djhay','0123456', 'Daniel Jhay Castroverde'),
+('djhay', '0123456', 'Daniel Jhay Castroverde'),
 ('rustan', '09080706', 'Rustan Cabras'),
 ('ninong', '12345678', 'Dexter Morana'),
-('gs' '24681300', 'Earl Belmar Dacian'),
+('gs', '24681300', 'Earl Belmar Dacian'),
 ('sirbrod', '12345678', 'Edison Sola'),
 ('rian', '12345678', 'Benjie Rian Bulahan'),
 ('titoburayann', '12345678', 'Bryan Palencia'),
 ('hokage', '12345678', 'Wilbert Albania');
 
-CREATE TABLE departments (
+CREATE TABLE IF NOT EXISTS departments (
     dept_id INT PRIMARY KEY AUTO_INCREMENT,
     dept_code VARCHAR(255) NOT NULL,
     dept_name VARCHAR(255) NOT NULL,
@@ -45,7 +44,7 @@ VALUES
 ('CHS', 'College of Health and Science', 8),
 ('COE', 'College of Education', 9);
 
-CREATE TABLE courses (
+CREATE TABLE IF NOT EXISTS courses (
     course_id INT PRIMARY KEY AUTO_INCREMENT,
     course_name VARCHAR(255),
     course_code VARCHAR(255),
@@ -78,7 +77,7 @@ VALUES
 ('Bachelor of Arts in Communication', NULL, 7, 7),
 ('Bachelor of Arts in English Language Studies', NULL, 7, 7);
 
-CREATE TABLE students (
+CREATE TABLE IF NOT EXISTS students (
     student_id INT AUTO_INCREMENT PRIMARY KEY,
     lname VARCHAR(255),
     fname VARCHAR(255),
