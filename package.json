@@ -3,9 +3,8 @@
   "version": "1.0.0",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js",
-    "dev": "nodemon app.js",
-    "prestart": "chmod +x ./node_modules/.bin/nodemon"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
   },
   "keywords": [],
   "author": "",
@@ -18,7 +17,9 @@
     "express": "^4.21.1",
     "jsonwebtoken": "^9.0.2",
     "mysql2": "^3.11.3",
-    "rows": "^0.0.2",
+    "rows": "^0.0.2"
+  },
+  "devDependencies": {
     "nodemon": "^3.1.7"
   },
   "description": ""
