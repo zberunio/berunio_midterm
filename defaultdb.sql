@@ -3,7 +3,7 @@ DROP DATABASE defaultdb;
 
 USE defaultdb;
 
-SHOW DATABASES;
+SHOW TABLES;
 
 CREATE TABLE users (
     user_id INT AUTO_INCREMENT PRIMARY KEY,
